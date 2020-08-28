@@ -1,0 +1,19 @@
+name: 'Bump Version'
+on:
+  push:
+    branches:
+      - 'master'
+jobs:
+  bump-version:
+    name: 'Bump Version on master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout v2 setting up'
+        uses: 'actions/checkout@v2'
+      - name: 'GitHub Version Bumper'
+        uses: 'kaangokdemir/github-version-bumper@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_NAME: 'Jeremy R DeYoung'
+          GITHUB_EMAIL: 'jeremy@nextstep.guru'
+          VERSION_FILE_NAME: 'version.json'
