@@ -1,6 +1,6 @@
 {
   "name": "hapi-on-kubernetes",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Hapi.js plugin to handle Kubernetes Liveness & Readiness probes",
   "main": "lib/plugin.js",
   "directories": {
