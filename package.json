@@ -8,7 +8,8 @@
   },
   "scripts": {
     "lint": "eslint --quiet=true --ext .js --ignore-path .eslintignore .",
-    "lintfix": "eslint --fix --ext .js --ignore-path .eslintignore ."
+    "lintfix": "eslint --fix --ext .js --ignore-path .eslintignore .",
+    "upgrade": "ncu -u -t minor"
   },
   "repository": {
     "type": "git",
@@ -32,21 +33,22 @@
   },
   "homepage": "https://github.com/NextStepGuru/hapi-on-kubernetes#readme",
   "dependencies": {
-    "eslint": "^7.7.0"
+    "eslint": "^7.27.0"
   },
   "devDependencies": {
     "@hapi/eslint-config-hapi": "^13.0.2",
     "@hapi/eslint-plugin-hapi": "^4.3.5",
     "babel-eslint": "^10.1.0",
-    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.1.0",
     "eslint-plugin-vue": "^6.2.2",
-    "nodemon": "^2.0.4",
-    "prettier": "^2.1.1"
+    "nodemon": "^2.0.7",
+    "npm-check-updates": "^11.6.0",
+    "prettier": "^2.3.0"
   }
 }
